@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function Mahasiswa (nama, energi){
+    this.nama = nama
+    this.energi = energi
+    this.makan = function(){
+        this.energi += 5
+        console.log(`energi anda ${this.energi}`)
+
+    }
+this.main = function(jam){
+    this.energi -= 3
+    console.log(`energi anda ${this.energi}`)
+}
+
+}
+
+
+    let rakha = new Mahasiswa('rakha', 10)
+    </script>
+</body>
+</html>

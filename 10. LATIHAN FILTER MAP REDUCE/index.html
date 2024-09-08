@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Durations</title>
+</head>
+<body>
+<h3>My Videos</h3>
+
+  <ul>
+    <li data-duration-video="15:30">html dasar</li>
+    <li data-duration-video="10:20">html part2</li>
+    <li data-duration-video="20:40">js dasar</li>
+    <li data-duration-video="18:15">js part2</li>
+    <li data-duration-video="30:45">c++ dasar</li>
+    <li data-duration-video="25:30">c++ part1</li>
+    <li data-duration-video="12:10">c++ part2</li>
+    <li data-duration-video="28:50">c++ part3</li>
+    <li data-duration-video="20:15">c++ part4</li>
+    <li data-duration-video="33:10">c++ part5</li>
+  </ul>
+
+  <h3>My Playlist</h3>
+  <ol>
+    <li>
+      <h4>C++ DASAR</h4>
+      <p>Jumlah Video: <span class="jumlah-video"></span></p>
+      <p>Total Durasi: <span class="total-durasi"></span></p>
+    </li>
+  </ol>
+
+    <script>
+      
+      // ambil semua elemen video
+const videos = Array.from(document.querySelectorAll('[data-duration-video]'))
+
+
+// pilih hanya yang c++
+let cpp = videos.filter(video => video.textContent.includes('html'))
+
+
+// ambil durasi masing2 video
+.map(item => item.dataset.durationVideo)
+
+
+// ubah durasi menjadi int, ubah menit menjadi detik
+.map (waktu => {
+    let parts = waktu.split(':').map(part => parseFloat(part))
+    return parts[0] * 60 + parts[1]
+})
+
+
+// jumlahkan semua detik
+.reduce((total, detik) => total + detik);
+
+
+// ubah format jadi jam menit detik
+let jam = Math.floor(cpp / 3600)
+cpp = cpp - jam * 3600
+const menit = Math.floor(cpp / 60)
+const detik = cpp - menit * 60
+
+
+//simpan di DOM
+const pDurasi = document.querySelector('.total-durasi')
+pDurasi.textContent = `${jam} Jam, ${menit} Menit, ${detik} Detik.`
+const jmlVideo = videos.filter(video => video.textContent.includes('html')).length
+const pJmlVideo = document.querySelector('.jumlah-video')
+pJmlVideo.textContent = `${jmlVideo} Video`
+
+    </script>
+</body>
+</html>

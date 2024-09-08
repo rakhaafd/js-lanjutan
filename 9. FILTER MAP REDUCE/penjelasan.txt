@@ -1,0 +1,10 @@
+jadi, perumpamaan nya seperti ini,
+
+1. Filter
+contohnya adalah seperti bahan bahan membuat sandwich yang di kategorikan dan dikelompokkan, seperti sayuran diisi oleh, selada, tomat, kol, timun dll.
+
+2. Map
+map bisa dibilang seperti "potong", jadi dari sayuran yang utuh tersebut dipotong-potong menjadi banyak
+
+3. Reduce
+reduce juga bisa disebut proses yang menggabungkan semua bahan yang telah dipotong menjadi 1 sandwich

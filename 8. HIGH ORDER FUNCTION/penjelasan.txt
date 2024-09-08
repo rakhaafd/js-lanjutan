@@ -1,0 +1,1 @@
+High Order Function dalam JavaScript adalah fungsi yang menerima fungsi lain sebagai argumen, mengembalikan fungsi lain, atau melakukan keduanya. Ini adalah konsep yang sangat penting dalam pemrograman fungsional, di mana fungsi diperlakukan sebagai "first-class citizens" yang dapat dipassing sebagai argumen, disimpan dalam variabel, atau dikembalikan dari fungsi lain.

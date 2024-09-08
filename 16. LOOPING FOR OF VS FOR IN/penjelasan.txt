@@ -1,0 +1,3 @@
+for...of bekerja dengan elemen iterable (array, string, Map, Set) dan mengembalikan nilai dari elemen-elemen tersebut.
+
+for...in bekerja dengan objek (termasuk array) dan mengembalikan kunci atau indeks dari properti objek.

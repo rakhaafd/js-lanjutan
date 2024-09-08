@@ -1,0 +1,5 @@
+Hoisting
+
+Hoisting adalah konsep dalam JavaScript di mana deklarasi variabel, fungsi, atau kelas secara otomatis dipindahkan (atau "diangkat") ke bagian atas ruang lingkup (scope) sebelum kode dieksekusi. Ini berarti bahwa variabel dan fungsi dapat digunakan dalam kode bahkan sebelum mereka dideklarasikan.
+
+Namun, penting untuk memahami bahwa hoisting hanya berlaku untuk deklarasi dan bukan untuk inisialisasi. Misalnya, jika kamu mendeklarasikan variabel dengan var, variabel tersebut akan di-hoist, tetapi jika kamu mencoba mengakses nilai variabel sebelum inisialisasi, nilainya akan menjadi undefined.

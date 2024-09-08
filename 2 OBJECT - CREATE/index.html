@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let methodMahasiswa = {
+
+    makan: function(porsi){
+        this.energi += porsi
+        console.log(`energi anda ${this.energi}`)
+    }
+
+    ,bermain: function(jam){
+        this.energi -= jam
+        console.log(`energi anda ${this.energi}`)
+    }
+
+    ,tidur: function(jam){
+        this.energi += jam * 2
+        console.log(`energi anda ${this.energi}`)
+    }
+}
+
+function mahasiswa (nama, energi){
+    let mahasiswa = Object.create(methodMahasiswa)
+    mahasiswa.nama = nama
+    mahasiswa.energi = energi
+    return mahasiswa
+}
+
+let mahasiswa1 = mahasiswa('rakha', 10)
+let mahasiswa2 = mahasiswa('siti', 20)
+    </script>
+</body>
+</html>

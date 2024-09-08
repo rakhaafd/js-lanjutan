@@ -1,0 +1,25 @@
+[
+    {
+    "nama": "rakha",
+    "umur": 17,
+    "email": "rakha@gmail",
+    "kota": "jakarta",
+    "ipk": 3.5
+    },
+
+    {
+    "nama": "syahrul",
+    "umur": 17,
+    "email": "syahrul@gmail",
+    "kota": "surabaya",
+    "ipk": 2.5
+    },
+
+    {
+        "nama": "udin",
+        "umur": 17,
+        "email": "udin@gmail",
+        "kota": "malang",
+        "ipk": 2.0
+        }
+]

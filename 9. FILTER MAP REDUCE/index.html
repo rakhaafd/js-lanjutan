@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //KALAU PAKE FOR
+
+        const angka = [-1, 8, 7, 10, 4, 6, -4, 9, 3,-3]
+        // const newAngka = []
+
+        // //mencari angka >= 3
+        // for (let i = 0; i < angka.length; i ++){  
+        //     if (angka[i]>= 3){
+        //        newAngka.push(angka[i])
+        //     }
+        // }
+        // console.log(newAngka)
+
+
+
+
+
+        //KALAU PAKE FILTER
+// const newAngka = angka.filter( a=> a >= 3)
+// console.log(newAngka)
+
+//  KALAU PAKE MAP
+// const newAngka = angka.map (a => a * 2 )
+// console.log(newAngka)
+
+
+//reduce
+//jumlah seluruh elemen dari array
+// const newAngka = angka.reduce((accumulator, currentValue) => accumulator + currentValue, 6 ) //tambahan nilai awal default nya 0
+// console.log(newAngka)
+
+
+
+
+// method Chaining
+// cari angka > 5
+//kalikan 3
+//jumlahkan
+
+const hasil = angka.filter(a => a > 5)
+.map(a => a * 3)
+.reduce((acc, cur) => acc + cur)
+console.log(hasil)
+
+
+    </script>
+</body>
+</html>
